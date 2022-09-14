@@ -486,6 +486,11 @@ inline void
                                     fw_util::populateFirmwareInformation(
                                         aResp, fw_util::biosPurpose,
                                         "BiosVersion", false);
+
+                                    // Grab the cpld version
+                                    fw_util::populateFirmwareInformation(
+                                        aResp, fw_util::cpldPurpose,
+                                        "CpldVersion", false);
                                 },
                                 connection.first, path,
                                 "org.freedesktop.DBus.Properties", "GetAll",
@@ -2904,6 +2909,9 @@ inline void requestRoutesSystems(App& app)
             asyncResp->res.jsonValue["Bios"] = {
                 {"@odata.id", "/redfish/v1/Systems/system/Bios"}};
 
+            asyncResp->res.jsonValue["Cpld"] = {
+                {"@odata.id", "/redfish/v1/Systems/system/Cpld"}};
+                
             asyncResp->res.jsonValue["Links"]["ManagedBy"] = {
                 {{"@odata.id", "/redfish/v1/Managers/bmc"}}};
 

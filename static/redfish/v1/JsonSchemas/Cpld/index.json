@@ -1,0 +1,21 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile",
+    "@odata.id": "/redfish/v1/JsonSchemas/Cpld",
+    "@odata.type": "#JsonSchemaFile.v1_0_2.JsonSchemaFile",
+    "Name": "CPLD Schema File",
+    "Schema": "#Cpld.Cpld",
+    "Description": "CPLD Schema File Location",
+    "Id": "Cpld",
+    "Languages": [
+        "en"
+    ],
+    "Languages@odata.count": 1,
+    "Location": [
+        {
+            "Language": "en",
+            "PublicationUri": "",
+            "Uri": "/redfish/v1/JsonSchemas/Cpld/Cpld.json"
+        }
+    ],
+    "Location@odata.count": 1
+}

@@ -804,6 +804,13 @@ inline static void
             {{"@odata.id", "/redfish/v1/Systems/system/Bios"}});
         aResp->res.jsonValue["RelatedItem@odata.count"] = relatedItem.size();
     }
+    else if (purpose == fw_util::cpldPurpose)
+    {
+        nlohmann::json& relatedItem = aResp->res.jsonValue["RelatedItem"];
+        relatedItem.push_back(
+            {{"@odata.id", "/redfish/v1/Systems/system/Cpld"}});
+        aResp->res.jsonValue["Members@odata.count"] = relatedItem.size();
+    }
     else
     {
         BMCWEB_LOG_ERROR << "Unknown software purpose " << purpose;

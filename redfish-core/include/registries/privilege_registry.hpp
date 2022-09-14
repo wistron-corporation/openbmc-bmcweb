@@ -372,6 +372,14 @@ const static auto& putControlCollection = privilegeSetConfigureManager;
 const static auto& deleteControlCollection = privilegeSetConfigureManager;
 const static auto& postControlCollection = privilegeSetConfigureManager;
 
+// CPLD
+const static auto& getCpld = privilegeSetLogin;
+const static auto& headCpld = privilegeSetLogin;
+const static auto& patchCpld = privilegeSetConfigureComponents;
+const static auto& postCpld = privilegeSetConfigureComponents;
+const static auto& putCpld = privilegeSetConfigureComponents;
+const static auto& deleteCpld = privilegeSetConfigureComponents;
+
 // Drive
 const static auto& getDrive = privilegeSetLogin;
 const static auto& headDrive = privilegeSetLogin;

@@ -19,6 +19,11 @@ constexpr const char* biosPurpose =
 constexpr const char* bmcPurpose =
     "xyz.openbmc_project.Software.Version.VersionPurpose.BMC";
 
+/* @brief String that indicates a CPLD firmware instance */
+constexpr const char* cpldPurpose =
+    "xyz.openbmc_project.Software.Version.VersionPurpose.CPLD";
+
+
 /**
  * @brief Populate the running firmware version and image links
  *

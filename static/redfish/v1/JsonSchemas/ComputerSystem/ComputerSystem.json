@@ -555,6 +555,22 @@
                     "readonly": true,
                     "versionAdded": "v1_14_0"
                 },
+                "Cpld": {
+                    "$ref": "http://redfish.dmtf.org/schemas/v1/Cpld.json#/definitions/Cpld",
+                    "description": "The link to the CPLD settings associated with this system.",
+                    "longDescription": "This property shall contain a link to a resource of type CPLD that lists the CPLD settings for this system.",
+                    "readonly": true,
+                    "versionAdded": "v1_16_1"
+                },
+                "CpldVersion": {
+                    "description": "The version of the system CPLD or primary system firmware.",
+                    "longDescription": "This property shall contain the version string of the currently installed and running CPLD.  For other systems, the property may contain a version string that represents the primary system firmware.",
+                    "readonly": true,
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "Description": {
                     "anyOf": [
                         {
